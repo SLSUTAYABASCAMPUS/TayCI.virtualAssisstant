@@ -170,7 +170,7 @@
       <div class="faq-item" role="button" aria-label="About Enrollment" onclick="faqClick('About Enrollment')"><span>About Enrollment?</span><span class="faq-arrow">›</span></div>
       <div class="faq-item" role="button" aria-label="About Admission" onclick="faqClick('About Admission')"><span>About Admission?</span><span class="faq-arrow">›</span></div>
       <div class="faq-item" role="button" aria-label="About Entrance Exam" onclick="faqClick('About Entrance Exam')"><span>About Entrance Exam?</span><span class="faq-arrow">›</span></div>
-      <div class="faq-item" role="button" aria-label="Academic Calendar" onclick="faqClick('Academic Calendar')"><span>Academic Calendar</span><span class="faq-arrow">›</span></div>
+      <div class="faq-item" role="button" aria-label="Academic Calendar" onclick="faqClick('About our location')"><span>About our location</span><span class="faq-arrow">›</span></div>
       <div class="faq-item" role="button" aria-label="How to get School ID" onclick="faqClick('How to get School ID?')"><span>How to get School ID?</span><span class="faq-arrow">›</span></div>
       <div class="faq-item" role="button" aria-label="How to get Admission Slip" onclick="faqClick('How to get Admission Slip?')"><span>How to get Admission Slip?</span><span class="faq-arrow">›</span></div>
       <div class="faq-item" role="button" aria-label="How to Request TOR" onclick="faqClick('How to Request TOR?')"><span>How to request TOR?</span><span class="faq-arrow">›</span></div>
@@ -286,8 +286,9 @@
           showYesNoButtons("afterEntranceExam");
         }, 500);
       }, 500);
-    } else if (msgLower.includes("academic calendar")) {
-      displayMessage("bot", "The academic calendar can be accessed via the official page of SLSU or announced through student portals.");
+    } else if (msgLower.includes("About our location")) {
+      displayMessage("bot", "Our campus is located at Brgy.Ibabang palale Tayabas City, Quezon");
+      displayMessage("bot", "https://maps.app.goo.gl/44XCKbZpsxAxvD496");
     } else if (msgLower.includes("school id")) {
       displayMessage("bot", "To get your School ID:");
       displayMessage("bot", "1) Proceed to the registrar's office.");
