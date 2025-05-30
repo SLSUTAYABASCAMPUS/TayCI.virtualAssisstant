@@ -237,7 +237,7 @@
       }, 500);
     } else if (msgLower.includes("enrollment")) {
       setTimeout(() => {
-        displayMessage("bot", "The enrollment schedule for incomming freshmen are tentatively to be announced on july<br>and will be posted on our official facebook page.please stay tuned for updates.");
+        displayMessage("bot", "The enrollment schedule for incoming freshmen will be posted on our official facebook page.please stay tuned for updates.");
         displayMessage("bot", "https://www.facebook.com/slsutayabascampus ");
         displayMessage("bot", "Do you want to know the requirements for enrollment?");
         showYesNoButtons("enrollmentRequirements");
@@ -255,6 +255,8 @@
           displayMessage("bot", "1. Go to the registrar’s office.");
           displayMessage("bot", "2. Fill out the academic record request form.");
           displayMessage("bot", "3. Submit your receipt and completed form.");
+          displayMessage("bot", "4. Orders fees to be paid.");
+          displayMessage("bot", "https://slsutayabascampus.github.io/oderofpayment/");
         }, 1000);
       }, 500);
     } else if (msgLower.includes("good moral")) {
@@ -290,7 +292,9 @@
       displayMessage("bot", "Our campus is located at Brgy.Ibabang palale Tayabas City, Quezon");
     } else if (msgLower.includes("school id")) {
       displayMessage("bot", "To get your School ID:");
-      displayMessage("bot", "1) Proceed to the registrar's office.");
+      displayMessage("bot", "1) The school ID is process at the main campus.");
+      displayMessage("bot", "2) Scan this QR Code, To fill out the SLSU Tayabas ID Form.");
+      displayMessage("bot" , "
       displayMessage("bot", "2) Submit 2x2 photo and Registration form.");
     } else if (msgLower.includes("certificate of enrollment")) {
       displayMessage("bot", "Visit the registrar’s office and request a Certificate of Enrollment. Bring your valid ID and proof of registration.");
