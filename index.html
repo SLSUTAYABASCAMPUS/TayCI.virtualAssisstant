@@ -169,8 +169,9 @@
     <div class="faq-list">
       <div class="faq-item" role="button" aria-label="About Enrollment" onclick="faqClick('About Enrollment')"><span>About Enrollment?</span><span class="faq-arrow">›</span></div>
       <!--<div class="faq-item" role="button" aria-label="About Admission" onclick="faqClick('About Admission')"><span>About Admission?</span><span class="faq-arrow">›</span></div>-->
-      <div class="faq-item" role="button" aria-label="About Entrance Exam" onclick="faqClick('About Entrance Exam')"><span>About Entrance Exam?</span><span class="faq-arrow">›</span></div>
-      <div class="faq-item" role="button" aria-label="About our location" onclick="faqClick('About our location?')"><span>About our location?</span><span class="faq-arrow">›</span></div>
+      <div class="faq-item" role="button" aria-label="About Confirmation for Qualifiers?" onclick="faqClick('About Confirmation for Qualifiers')"><span>About Confirmation for Qualifiers?</span><span class="faq-arrow">›</span></div>
+      <div class="faq-item" role="button" aria-label="About Reconsideration" onclick="faqClick('About Reconsideration?')"><span>About Reconsideration?</span><span class="faq-arrow">›</span></div>
+      <div class="faq-item" role="button" aria-label="About our location?" onclick="faqClick('About our location?')"><span>About our location?</span><span class="faq-arrow">›</span></div>
       <div class="faq-item" role="button" aria-label="How to get School ID" onclick="faqClick('How to get School ID?')"><span>How to get School ID?</span><span class="faq-arrow">›</span></div>
       <div class="faq-item" role="button" aria-label="How to Request academic records" onclick="faqClick('How to Request academic records?')"><span>How to Request academic records?</span><span class="faq-arrow">›</span></div>
      
@@ -222,10 +223,12 @@
     displayMessage("user", message);
     const msgLower = message.toLowerCase();
 
-    if (msgLower.includes("admission slip")) {
+    if (msgLower.includes("about reconsideration?")) {
       setTimeout(() => {
-        displayMessage("bot", "To get an Admission Slip:");
-        displayMessage("bot", "1. Submit a letter stating why you need an admission slip (e.g., reason for absence).");
+        displayMessage("bot", "about reconsideration?:");
+         displayMessage("bot", "1. For those who are not qualified the schecdule for reconsideration June 11 & 13, 2025, You may visit in our campus on those dates for fuhter assisstance.");
+         displayMessage("bot", "https://drive.google.com/drive/folders/1F1LHMr1mG_UV2kwq6QrjyR6KRNq0JpI7?usp=drive_link");
+         displayMessage("bot", "Click this link & print the form for reconsideration and waiver, bring the hard copy for reconsideration");
       }, 500);
     } else if (msgLower.includes("admission")) {
       setTimeout(() => {
@@ -256,19 +259,17 @@
           displayMessage("bot", "https://slsutayabascampus.github.io/oderofpayment/");    
         }, 1000);
       }, 500);
-    } else if (msgLower.includes("entrance exam")) {
+    } else if (msgLower.includes("Confirmation for Qualifiers")) {
       setTimeout(() => {
-        displayMessage("bot", "About Entrance Exam:");
+        displayMessage("bot", "About Confirmation of Qualifiers:");
         displayMessage("bot", "1. The list of entrance exam qualifiers is posted in our official facebook page. Stay tuned for updates!");
-        displayMessage("bot", "2. For those who are not qualified the schecdule for reconsideration June 11 & 13, 2025, You may visit in our campus on those dates for fuhter assisstance.");
-        displayMessage("bot", "https://drive.google.com/drive/folders/1F1LHMr1mG_UV2kwq6QrjyR6KRNq0JpI7?usp=drive_link");
-        displayMessage("bot", "Click this link & print the form for reconsideration and waiver, bring the hard copy for reconsideration");
+        displayMessage("bot", "2. The schedule of confirmation for qualifiers, June 9 & 10, 2025");
         displayMessage("bot", "https://www.facebook.com/slsutayabascampus");
         chatBox.scrollTop = chatBox.scrollHeight;
       
 
         setTimeout(() => {
-          displayMessage("bot", "Do you still have questions about the entrance exam?");
+          displayMessage("bot", "Do you still have questions about the confirmation for qualifiers?");
           showYesNoButtons("afterEntranceExam");
         }, 500);
       }, 500);
