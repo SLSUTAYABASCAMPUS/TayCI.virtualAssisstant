@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>TayCI Mobile UI</title>
+  <title>TayCI</title>
   <style>
     body {
       margin: 0;
@@ -237,7 +237,7 @@
       }, 500);
     } else if (msgLower.includes("enrollment")) {
       setTimeout(() => {
-        displayMessage("bot", "The enrollment schedule for incoming freshmen will be posted on our official facebook page.please stay tuned for updates.");
+        displayMessage("bot", "The enrollment schedule for incoming freshmen will be posted on our official facebook page.<br>please stay tuned for updates.");
         displayMessage("bot", "https://www.facebook.com/slsutayabascampus ");
         displayMessage("bot", "Do you want to know the requirements for enrollment?");
         showYesNoButtons("enrollmentRequirements");
@@ -257,28 +257,28 @@
           displayMessage("bot", "3. Submit your receipt and completed form.");
           displayMessage("bot", "4. Orders fees to be paid.");
           displayMessage("bot", "https://slsutayabascampus.github.io/oderofpayment/");    
-        }, 1000);
+        }, 3000);
       }, 500);
-    } else if (msgLower.includes("About Confirmation for Qualifiers")) {
+    } else if (msgLower.includes("qualifiers")) {
       setTimeout(() => {
         displayMessage("bot", "Confirmation for Qualifiers:");
         displayMessage("bot", "1. The list of entrance exam qualifiers is posted in our official facebook page. Stay tuned for updates!");
-        displayMessage("bot", "2. The schedule of confirmation for qualifiers, June 9 & 10, 2025");
+        displayMessage("bot", "2. The confirmation schedule for qualifiers is on June 9 and 10, 2025. For more information, please visit our official Facebook page.");
         displayMessage("bot", "https://www.facebook.com/slsutayabascampus");
         chatBox.scrollTop = chatBox.scrollHeight;
       
 
         setTimeout(() => {
-          displayMessage("bot", "Do you still have questions about the confirmation for qualifiers?");
+          displayMessage("bot", "Do you still have questions?");
           showYesNoButtons("afterEntranceExam");
         }, 500);
       }, 500);
     } else if (msgLower.includes("about our location")) {
       displayMessage("bot", "Our campus is located at Brgy.Ibabang palale Tayabas City, Quezon");
     } else if (msgLower.includes("school id")) {
-      displayMessage("bot", "To get your School ID:");
-      displayMessage("bot", "1) The school ID is process at the main campus.");
-      displayMessage("bot", "2) Click this link, To fill out the SLSU Tayabas ID Form.");
+      displayMessage("bot", "About School ID:");
+      displayMessage("bot", "1) The school ID is usually processed during enrollment.");
+      displayMessage("bot", "2) For lost IDs, you can visit the BAW Office at the main campus and fill out the ID form. (Click the link below)");
       displayMessage("bot" , "https://docs.google.com/forms/d/e/1FAIpQLSeAY-TSCtUWpunV3weWopcZ7tiHsu_6jgdST77ORilkloIGcA/viewform?fbclid=IwY2xjawKmoLRleHRuA2FlbQIxMABicmlkETFXeVJQemoxUTJTZzNpZEd3AR6tJ4UIzUOULYgo_9eAPsVzz4fxV_2PnhsLd8eFeu8LnUuRjiMd8cHE3AOICg_aem_id8rkIrti0y3_t2cqazCDA&fbzx=458033857008174290");
       displayMessage("bot", "3) Claiming of ID it's either at the campus or main campus.");
     } else if (msgLower.includes("certificate of enrollment")) {
