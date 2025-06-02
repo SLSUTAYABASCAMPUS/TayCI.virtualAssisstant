@@ -313,7 +313,7 @@
           //displayMessage("bot", "Date of application: March 9 to 14, 2025.");
           setTimeout(() => {
           //  displayMessage("bot", "Do you want to know what program offers?");
-            showYesNoButtons("programInquiry");
+         //   showYesNoButtons("programInquiry");
           }, 500);
         }
       },
@@ -339,7 +339,7 @@
 
           setTimeout(() => {
             //displayMessage("bot", "Do you want to fill out the application form?");
-            showYesNoButtons("fillFormDecision");
+           // showYesNoButtons("fillFormDecision");
           }, 500);
         }
       }
@@ -366,13 +366,13 @@
   }
 
   function showProgramList() {
-    //displayMessage("bot", "List of Program Offerings:");
-    //displayMessage("bot", "1. BS in Agriculture major in Crop Science");
-    //displayMessage("bot", "2. BS in Hospitality Management");
-    //displayMessage("bot", "3. BS in Industrial Technology major in Computer Technology");
+    displayMessage("bot", "List of Program Offerings:");
+    displayMessage("bot", "1. BS in Agriculture major in Crop Science");
+    displayMessage("bot", "2. BS in Hospitality Management");
+    displayMessage("bot", "3. BS in Industrial Technology major in Computer Technology");
 
     setTimeout(() => {
-      //displayMessage("bot", "Do you still have questions about admission?");
+      displayMessage("bot", "Do you still have questions about admission?");
       showYesNoButtons("afterFormDecision");
     }, 1000);
   }
@@ -382,9 +382,9 @@
 
   if (currentAction === "programInquiry") {
     showProgramList();
-  } else if (currentAction === "fillFormDecision") {
-    displayMessage("bot", "Great! You can fill the form here:");
-    displayMessage("bot", "https://requestform.42web.io/SLSU-Tayabas,Campus.php");
+  }// else if (currentAction === "fillFormDecision") {
+   // displayMessage("bot", "Great! You can fill the form here:");
+   // displayMessage("bot", "https://requestform.42web.io/SLSU-Tayabas,Campus.php");
 
     setTimeout(() => {
       displayMessage("bot", "Do you still have questions about admission?");
