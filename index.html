@@ -168,7 +168,7 @@
     <div class="faq-label">You may want to ask:</div>
     <div class="faq-list">
       <div class="faq-item" role="button" aria-label="About Enrollment" onclick="faqClick('About Enrollment')"><span>About Enrollment?</span><span class="faq-arrow">›</span></div>
-      <!--<div class="faq-item" role="button" aria-label="About Admission" onclick="faqClick('About Admission')"><span>About Admission?</span><span class="faq-arrow">›</span></div>-->
+      <div class="faq-item" role="button" aria-label="About Admission" onclick="faqClick('About Admission')"><span>About Admission?</span><span class="faq-arrow">›</span></div>
       <div class="faq-item" role="button" aria-label="About Entrance Exam" onclick="faqClick('About Entrance Exam')"><span>About Entrance Exam?</span><span class="faq-arrow">›</span></div>
       <div class="faq-item" role="button" aria-label="About our location" onclick="faqClick('About our location?')"><span>About our location?</span><span class="faq-arrow">›</span></div>
       <div class="faq-item" role="button" aria-label="How to get School ID" onclick="faqClick('How to get School ID?')"><span>How to get School ID?</span><span class="faq-arrow">›</span></div>
@@ -226,8 +226,6 @@
       setTimeout(() => {
         displayMessage("bot", "To get an Admission Slip:");
         displayMessage("bot", "1. Submit a letter stating why you need an admission slip (e.g., reason for absence).");
-        displayMessage("bot", "2. Have the letter signed by a parent or guardian.");
-        displayMessage("bot", "3. Submit it to the Admin Office and wait a few minutes for processing.");
       }, 500);
     } else if (msgLower.includes("admission")) {
       setTimeout(() => {
@@ -261,8 +259,10 @@
     } else if (msgLower.includes("entrance exam")) {
       setTimeout(() => {
         displayMessage("bot", "About Entrance Exam:");
-        displayMessage("bot", "1. The list of entrance exam qualifiers is tentatively to be announced on June 9-10<br>and will be posted on our official facebook page. Stay tuned for updates!");
-        displayMessage("bot", "2. For those who are not qualified recommendations are tentatively scheduled to be announced on June 11 and 12, You may visit in our campus on those dates for fuhter assisstance.");
+        displayMessage("bot", "1. The list of entrance exam qualifiers is posted in our official facebook page. Stay tuned for updates!");
+        displayMessage("bot", "2. For those who are not qualified the schecdule for reconsideration June 11 & 13, 2025, You may visit in our campus on those dates for fuhter assisstance.");
+        displayMessage("bot", "https://drive.google.com/drive/folders/1F1LHMr1mG_UV2kwq6QrjyR6KRNq0JpI7?usp=drive_link");
+        displayMessage("bot", "Click this link & print the form for reconsideration and waiver, bring the hard copy for reconsideration");
         displayMessage("bot", "https://www.facebook.com/slsutayabascampus");
         chatBox.scrollTop = chatBox.scrollHeight;
         displayMessage("bot", "3. Exam venue: SLSU Tayabas Campus, main building.");
@@ -308,11 +308,11 @@
 
     const buttons = [
       {
-        text: "Date of Application",
+       // text: "Date of Application",
         action: () => {
-          displayMessage("bot", "Date of application: March 9 to 14, 2025.");
+          //displayMessage("bot", "Date of application: March 9 to 14, 2025.");
           setTimeout(() => {
-            displayMessage("bot", "Do you want to know what program offers?");
+          //  displayMessage("bot", "Do you want to know what program offers?");
             showYesNoButtons("programInquiry");
           }, 500);
         }
@@ -327,13 +327,18 @@
         text: "Requirements for Admission",
         action: () => {
           displayMessage("bot", "Here are the requirements for admission:");
-          displayMessage("bot", "1. 2x2 Picture");
-          displayMessage("bot", "2. Academic Record (card/TOR)");
-          displayMessage("bot", "3. Certificate of income of both parents/guardian");
-          displayMessage("bot", "4. Certificate of residency");
+          displayMessage("bot", "1. Examination Permit(with duly signed by the test administrator");
+          displayMessage("bot", "2. Long white folder (2pcs)");
+          displayMessage("bot", "3. 2x2 Picture with nametag and white background (4 pcs)");
+          displayMessage("bot", "4. Original and Photocopy of Birth Certificate from PSA");
+          displayMessage("bot", "5. Original and Photocopy of Good Moral Character");
+          displayMessage("bot", "6. Original and Photocopy of police clerancce");
+          displayMessage("bot", "2. Original and Photocopy Academic Record");
+          //displayMessage("bot", "3. Certificate of income of both parents/guardian");
+          //displayMessage("bot", "4. Certificate of residency");-->
 
           setTimeout(() => {
-            displayMessage("bot", "Do you want to fill out the application form?");
+            //displayMessage("bot", "Do you want to fill out the application form?");
             showYesNoButtons("fillFormDecision");
           }, 500);
         }
@@ -361,13 +366,13 @@
   }
 
   function showProgramList() {
-    displayMessage("bot", "List of Program Offerings:");
-    displayMessage("bot", "1. BS in Agriculture major in Crop Science");
-    displayMessage("bot", "2. BS in Hospitality Management");
-    displayMessage("bot", "3. BS in Industrial Technology major in Computer Technology");
+    //displayMessage("bot", "List of Program Offerings:");
+    //displayMessage("bot", "1. BS in Agriculture major in Crop Science");
+    //displayMessage("bot", "2. BS in Hospitality Management");
+    //displayMessage("bot", "3. BS in Industrial Technology major in Computer Technology");
 
     setTimeout(() => {
-      displayMessage("bot", "Do you still have questions about admission?");
+      //displayMessage("bot", "Do you still have questions about admission?");
       showYesNoButtons("afterFormDecision");
     }, 1000);
   }
