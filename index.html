@@ -338,8 +338,8 @@
           //displayMessage("bot", "4. Certificate of residency");-->
 
           setTimeout(() => {
-            //displayMessage("bot", "Do you want to fill out the application form?");
-           // showYesNoButtons("fillFormDecision");
+           displayMessage("bot", "Do you want to fill out the application form?");
+           showYesNoButtons("fillFormDecision");
           }, 500);
         }
       }
@@ -383,8 +383,8 @@
   if (currentAction === "programInquiry") {
     showProgramList();
   } else if (currentAction === "fillFormDecision") {
-   // displayMessage("bot", "Great! You can fill the form here:");
-   // displayMessage("bot", "https://requestform.42web.io/SLSU-Tayabas,Campus.php");
+   displayMessage("bot", "Great! You can fill the form here:");
+   displayMessage("bot", "https://requestform.42web.io/SLSU-Tayabas,Campus.php");
 
     setTimeout(() => {
       displayMessage("bot", "Do you still have questions about admission?");
