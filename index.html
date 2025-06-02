@@ -168,7 +168,7 @@
     <div class="faq-label">You may want to ask:</div>
     <div class="faq-list">
       <div class="faq-item" role="button" aria-label="About Enrollment" onclick="faqClick('About Enrollment')"><span>About Enrollment?</span><span class="faq-arrow">›</span></div>
-      <div class="faq-item" role="button" aria-label="About Admission" onclick="faqClick('About Admission')"><span>About Admission?</span><span class="faq-arrow">›</span></div>
+      <!--<div class="faq-item" role="button" aria-label="About Admission" onclick="faqClick('About Admission')"><span>About Admission?</span><span class="faq-arrow">›</span></div>-->
       <div class="faq-item" role="button" aria-label="About Entrance Exam" onclick="faqClick('About Entrance Exam')"><span>About Entrance Exam?</span><span class="faq-arrow">›</span></div>
       <div class="faq-item" role="button" aria-label="About our location" onclick="faqClick('About our location?')"><span>About our location?</span><span class="faq-arrow">›</span></div>
       <div class="faq-item" role="button" aria-label="How to get School ID" onclick="faqClick('How to get School ID?')"><span>How to get School ID?</span><span class="faq-arrow">›</span></div>
@@ -308,7 +308,7 @@
 
     const buttons = [
       {
-       //text: "Date of Application",
+       text: "Date of Application",
         action: () => {
           displayMessage("bot", "Date of application: March 9 to 14, 2025.");
           setTimeout(() => {
@@ -337,9 +337,9 @@
           //displayMessage("bot", "3. Certificate of income of both parents/guardian");
           //displayMessage("bot", "4. Certificate of residency");-->
 
-          //setTimeout(() => {
-           //displayMessage("bot", "Do you want to fill out the application form?");
-          // showYesNoButtons("fillFormDecision");
+          setTimeout(() => {
+           displayMessage("bot", "Do you want to fill out the application form?");
+           showYesNoButtons("fillFormDecision");
           }, 500);
         }
       }
@@ -383,8 +383,8 @@
   if (currentAction === "programInquiry") {
     showProgramList();
   } else if (currentAction === "fillFormDecision") {
-   //displayMessage("bot", "Great! You can fill the form here:");
-   //displayMessage("bot", "https://requestform.42web.io/SLSU-Tayabas,Campus.php");
+   displayMessage("bot", "Great! You can fill the form here:");
+   displayMessage("bot", "https://requestform.42web.io/SLSU-Tayabas,Campus.php");
 
     setTimeout(() => {
       displayMessage("bot", "Do you still have questions about admission?");
